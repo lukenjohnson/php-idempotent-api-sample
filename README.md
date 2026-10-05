@@ -24,7 +24,7 @@ sequenceDiagram
     A->>D: BEGIN IMMEDIATE
     A->>D: Claim K + canonical request hash
     A->>D: Create invoice and lines
-    A->>D: Store response; COMMIT
+    A->>D: Store response and commit
     A-->>C: 201 Created
 
     C->>A: Retry same request + key K
